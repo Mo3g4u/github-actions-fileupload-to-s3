@@ -26,4 +26,4 @@ jobs:
           aws s3 cp sample.html s3://github-actions-fileupload-to-s3/sample.html
       - name: Sync images folder to S3
         run: |
-          aws s3 sync images s3://github-actions-fileupload-to-s3/images
+          aws s3 sync images s3://github-actions-fileupload-to-s3/images --delete
